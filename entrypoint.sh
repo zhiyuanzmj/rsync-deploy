@@ -2,6 +2,7 @@
 set -eu
 
 SSHPATH="$HOME/.ssh"
+rm -rf "$SSHPATH"
 if [ ! -d "$SSHPATH" ]; then
   mkdir -p "$SSHPATH"
 fi
